@@ -1,0 +1,24 @@
+{
+  "name": "appng-symfony/validation-bundle",
+  "description": "Symfony3 Bundle for validate entered data",
+  "type": "symfony-bundle",
+  "keywords": [],
+  "license": "MIT",
+  "version": "0.1.0",
+  "support": {
+    "email": "krzysztof.raciniewski@gmail.com",
+  },
+  "authors": [
+    {
+      "name": "Krzysztof Raciniewski",
+      "email": "krzysztof.raciniewski@gmail.com",
+      "homepage": "http://raciniewski.pl",
+      "role": "Developer"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": { "AppNg\\Symfony\\ValidationBundle\\": "" },
+    "exclude-from-classmap": ["/Tests/"]
+  }
+}
