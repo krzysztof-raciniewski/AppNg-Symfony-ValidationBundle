@@ -1,0 +1,3 @@
+app_ng_validation_homepage:
+    path:     /
+    defaults: { _controller: AppNgValidationBundle:Default:index }
