@@ -18,6 +18,10 @@ class ConstraintNipValidator extends ConstraintValidator
         $number = preg_replace('/\s+/', '', $number);
         $number = str_replace('-', '', $number);
 
+        if($number == '') {
+            return true;
+        }
+
         if (!preg_match('/^[\d]{10}$/', $number) || '0000000000' == $number) {
             return false;
         }
