@@ -39,7 +39,7 @@ class ConstraintNipValidator extends ConstraintValidator
      */
     public function validate($value, Constraint $constraint)
     {
-        if ($this->nipIsValid($value)) {
+        if (!$this->nipIsValid($value)) {
             $this->context->buildViolation($constraint->defaultErrorMessage)->addViolation();
         }
     }
